@@ -1,0 +1,195 @@
+body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.egg {
+    right: 530px;
+    top: 40px;
+    text-align: center;
+    font-size: 70px;
+    position: absolute;
+    height: 100px;
+    width: 800px;
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+}
+
+.t {
+    text-align: center;
+    font-size: 70px;
+}
+
+.back {
+    position: absolute;
+    top: 5px;
+    width: 3%;
+    height: 6%;
+}
+
+.start {
+    position: absolute;
+    left: 565px;
+    top: 705px;
+    background-color: rgb(247, 184, 11);
+    width: 780px;
+    height: 150px;
+    border-radius: 45px;
+    border: 2px solid #000000;
+    transition-duration: 0.4s;
+}
+
+.start:hover {
+    background-color: rgb(255, 217, 0);
+    border: 4px solid #000000;
+}
+
+.box1 {
+    position: relative;
+    top: 40px;
+    left: 450px;
+    width: 1000px;
+    height: 100px;
+    color: black;
+    background-color: rgb(255, 217, 0);
+    border: 2px solid #000000;
+}
+
+.n {
+    position: absolute;
+    top: 214px;
+    left: 345px;
+    width: 100px;
+    height: 100px;
+    color: black;
+    background-color: rgb(255, 217, 0);
+    border: 2px solid #000000;
+    display: none;
+}
+
+.box2 {
+    position: relative;
+    top: 140px;
+    left: 485px;
+    width: 450px;
+    height: 100px;
+    color: black;
+    background-color: rgb(255, 217, 0);
+    border: 2px solid #000000;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 45px;
+    display: none;
+    transition-duration: 0.4s;
+}
+
+.box2:hover {
+    background-color: rgb(247, 184, 11);
+    border: 4px solid #000000;
+}
+
+.img {
+    position: absolute;
+    top: 615px;
+    width: 130px;
+    height: 80px;
+    left: 445px;
+}
+
+.h {
+    position: relative;
+    top: -55px;
+    text-align: center;
+    font-size: 100px;
+}
+
+.h1 {
+    position: relative;
+    top: -30px;
+    text-align: center;
+    font-size: 450%;
+}
+
+.n1 {
+    position: relative;
+    top: -40px;
+    text-align: center;
+    font-size: 450%;
+}
+
+.div {
+    position: absolute;
+    height: 600px;
+    width: 100px;
+    transform: rotate(35deg);
+    animation-name: example;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes example {
+    0% {}
+
+    25% {}
+
+    50% {}
+
+    75% {}
+
+    100% {}
+}
+
+.c {
+    position: absolute;
+    top: 550px;
+    left: -40px;
+    transform: rotate(5deg);
+}
+
+.F {
+    width: 60%;
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    transform: rotate(-15deg);
+    display: none;
+}
+
+.T {
+    width: 30%;
+    position: absolute;
+    top: 15%;
+    right: 38%;
+    transform: rotate(-15deg);
+    display: none;
+}
+
+.imgf {
+    position: absolute;
+    width: 45%;
+    left: 550px;
+    top: 20%;
+    display: none;
+    border: 5px solid black;
+}
+
+.imgs {
+    position: absolute;
+    width: 45%;
+    left: 550px;
+    top: 20%;
+    display: none;
+    border: 5px solid black;
+}
+
+.imgse {
+    position: absolute;
+    width: 27%;
+    left: 700px;
+    top: 20%;
+    display: none;
+    border: 5px solid black;
+}
