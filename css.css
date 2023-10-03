@@ -193,3 +193,26 @@ body {
     display: none;
     border: 5px solid black;
 }
+
+.cofi {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    border: 5px solid black;
+    border-radius: 49%;
+    transition-duration: 0.4s;
+}
+
+.cofi:hover {
+    transform: rotate(90deg);
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.cofi h1 {
+    position: relative;
+    top: -13.5px;
+    text-align: center;
+}
