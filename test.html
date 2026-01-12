@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Send JSON to Google Script</title>
+    <style>
+        button {
+            padding: 12px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>ส่งข้อมูลไป Google Apps Script</h2>
+
+    <button onclick="sendData('ItemA', 1, 10)">ปุ่มที่ 1</button>
+    <button onclick="sendData('ItemB', 2, 20)">ปุ่มที่ 2</button>
+    <button onclick="sendData('ItemC', 3, 30)">ปุ่มที่ 3</button>
+
+    <script>
+        const GOOGLE_SCRIPT_URL =
+        "https://script.google.com/macros/s/AKfycbwlhNgGMNYkI24q7DyXtlRUw40eS3JOfa_zdmRhsJmKdiS3IMFGsUEWCMAdlrMXFjt-Lg/exec";
+
+        function sendData(name, column, value) {
+
+            const json = "{"
+                + "\"name_of_item\":\"" + String(name) + "\","
+                + "\"Column_of_item\":" + String(column) + ","
+                + "\"Row_of_item\":" + String(value)
+                + "}";
+
+            fetch(GOOGLE_SCRIPT_URL, {
+                method: "POST",
+                mode: "no-cors",
+                body: json
+            })
+            .then(() => {
+                console.log("ok");
+            })
+            .catch(err => {
+                console.error(err);
+            });
+        }
+
+    </script>
+
+</body>
+</html>
